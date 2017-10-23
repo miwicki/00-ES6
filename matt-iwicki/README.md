@@ -22,10 +22,14 @@ Follow these instructions carefully and in order.
 
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
-(Put your answer here)
+For repeated uses of i, 'let' had to be used each time in order to redefine the variable for a new loop, as 'const' variables cannot be redefined.  
+For counters, like the variable totalClicks, the counter is always being redefined as a new number (theoretically being added to or detracted from) so it is by definition not constant.  
+For constructor functions, where new instances of the constructor are being added throughout the code, the array of instances cannot stay constant, as new instances are being added.  
+
+It seems like for small blocks of simple code 'let' and 'const' would have the same effect, but for larger and more complicated pages, they have very different uses.  As 'const' cannot be redefined, I can't see it being used very often in pages involved user input and saving that user data.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
-(Put your answer here)
+YESSSS ITS SO MUCH BETTER!!!! Once you've done it once it's not very difficult at all, and not having to worry about the spacing between words and plus signs is so much more intuitive and easy to read/check.  
